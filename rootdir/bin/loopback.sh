@@ -5,8 +5,6 @@ rec=2
 mic1=3
 mic2=4
 playback=5
-mic1_to_rec=11
-mic2_to_spk=12
 enable=1
 disable=0
 open="-Y"
@@ -33,11 +31,9 @@ then
 	else
 		if test $1 -eq $spk
 		then
-		#setprop sys.tinyhostless-spk 1
-		start tinyhostless_spk
+		setprop sys.tinyhostless-spk 1
 		else
-#		setprop sys.tinyhostless 1
-		start tinyhostless
+		setprop sys.tinyhostless 1
 		fi	
 	fi
 elif test $2 -eq $disable
@@ -59,16 +55,12 @@ then
 	else
 	pkill -f $pname
 	loopbacktest $close "$1"
-	#setprop sys.tinyhostless 0
-	stop tinyhostless
-	stop tinyhostless_spk
-	#setprop sys.tinyhostless-spk 0
+	setprop sys.tinyhostless 0
+	setprop sys.tinyhostless-spk 0
 	setprop sys.loopback-spk 2
 	setprop sys.loopback-rec 2
 	setprop sys.loopback-mic1 2
 	setprop sys.loopback-mic2 2
-	setprop sys.loopback-mic12rec 2
-	setprop sys.loopback-mic22spk 2
 	fi
 else
 	echo "input error ctl cmd!"
