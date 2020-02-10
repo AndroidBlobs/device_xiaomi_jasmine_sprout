@@ -1,4 +1,3 @@
-require version-baseband=3.1-00672.2-SDM660_GEN_PACK-1.172780.3.174030.1
-require version-modem=2018-10-3019:26:19
-require version-trustzone=TZ.BF.4.0.7-00082
-require version-vendor=1540900386
+require version-baseband=3.1-00777-SDM660_GEN_PACK-1.241702.2.246061.3
+require version-trustzone=TZ.BF.4.0.7-00101
+require version-vendor=1579016996

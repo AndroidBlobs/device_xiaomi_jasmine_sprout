@@ -17,7 +17,7 @@ PRODUCT_MODEL := Mi A2
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR := xiaomi
 TARGET_VENDOR_PRODUCT_NAME := jasmine_sprout
-PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="jasmine-user 8.1.0 OPM1.171019.011 V9.6.16.0.ODIMIFE release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="jasmine-user 10 QKQ1.190910.002 V11.0.5.0.QDIMIXM release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := xiaomi/jasmine/jasmine_sprout:8.1.0/OPM1.171019.011/V9.6.16.0.ODIMIFE:user/release-keys
+BUILD_FINGERPRINT := xiaomi/jasmine/jasmine_sprout:10/QKQ1.190910.002/V11.0.5.0.QDIMIXM:user/release-keys
